@@ -1,0 +1,12 @@
+<div id="app">
+  <md-toolbar>
+    <h1 class="md-title">{{title}}</h1>
+  </md-toolbar>
+  <ul>
+    <li><router-link to="/list">List</router-link></li>
+    <router-link tag="li" to="/bar" :event="['mousedown', 'touchstart']">
+      <a>/bar</a>
+    </router-link>
+  </ul>
+  <router-view class="view"></router-view>
+</div>
